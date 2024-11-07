@@ -1,0 +1,8 @@
+permission=read-only
+allowed="true"
+resetCount=3
+
+$ kubectl create configmap permission-config \
+  --from-file=<path/to/>permission-reset.properties
+
+configmap/permission-config created
